@@ -12,5 +12,3 @@ export default {
     <Calendar />
   </div>
 </template>
-
-<style></style>

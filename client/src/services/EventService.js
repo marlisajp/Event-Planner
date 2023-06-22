@@ -17,16 +17,15 @@ export default {
     return apiClient.get('/events')
   },
 
-  // Get a single event
-  // getEvent(id) {
-  //   return apiClient.get(`/events/${id}`)
-  // },
-
   // Create a new event
   addEvent(event) {
     return apiClient.post('/events/add', event)
   }
 
+  // Get a single event
+  // getEvent(id) {
+  //   return apiClient.get(`/events/${id}`)
+  // },
   // // Update an existing event
   // updateEvent(event) {
   //   return apiClient.put(`/events/${event.id}`, event)

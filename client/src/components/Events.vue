@@ -40,10 +40,11 @@ export default {
 #events-container {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  justify-content: center;
+  /* width: 80%; */
 }
 .card {
-  --border-radius: 0.75rem;
+  --border-radius: 2%;
   --primary-color: #7257fa;
   --secondary-color: #3c3852;
   width: 210px;

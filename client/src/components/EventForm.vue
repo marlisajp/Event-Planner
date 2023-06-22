@@ -131,8 +131,8 @@ export default {
   font-size: 16px;
   border: none;
   border-radius: 4px;
-  background-color: rgb(3, 3, 54);
-  color: #fff;
+  background-color: rgb(94, 217, 162);
+  color: #000000;
   text-transform: uppercase;
   transition: background-color 0.2s ease-in-out;
   cursor: pointer;
