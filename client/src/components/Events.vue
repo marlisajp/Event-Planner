@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <h1>Events</h1>
-    <ul>
-      <li v-for="event in events" :key="event.id">
-        <h2>{{ event.title }}</h2>
-        <p>{{ event.details }}</p>
-        <p>{{ event.date }}</p>
-        <p>{{ event.time }}</p>
-      </li>
-    </ul>
+  <div class="container">
+    <div id="events-container">
+      <div class="card" v-for="event in events" :key="event.id">
+        <p class="card-title">{{ event.title }}</p>
+        <p class="card-details">{{ event.details }}</p>
+        <p class="card-date">{{ event.date }}</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -38,4 +36,41 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+#events-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+.card {
+  --border-radius: 0.75rem;
+  --primary-color: #7257fa;
+  --secondary-color: #3c3852;
+  width: 210px;
+  font-family: 'Arial';
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: #d3d3e8;
+  box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+  position: relative;
+  margin: 10px;
+}
+.card-title {
+  padding: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.card:hover .card-title {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+.card-details {
+  color: var(--secondary-color);
+  font-size: 0.86rem;
+}
+.card-date {
+  color: #6e6b80;
+  font-size: 0.8rem;
+}
+</style>

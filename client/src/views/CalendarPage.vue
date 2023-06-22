@@ -1,16 +1,15 @@
 <script>
-import Events from '../components/Events.vue'
-
+import Calendar from '@/components/Calendar.vue'
 export default {
   components: {
-    Events
+    Calendar
   }
 }
 </script>
 
 <template>
   <div class="container">
-    <Events />
+    <Calendar />
   </div>
 </template>
 
